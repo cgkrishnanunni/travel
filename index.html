@@ -22,7 +22,7 @@
   -->
 
   <!-- Custom Title Bar -->
-  <title>Travelling</title>
+  <title>Title</title>
 
 	<!-- 2/20/2021: Updated to the latest Start Bootstrap code, so now pulling these in like they do
 								One exception: using my font awesome, was missing font awesome icons with the Start Bootstrap one...
@@ -72,13 +72,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+            <a class="nav-link js-scroll-trigger" href="#travel">Travel</a>
           </li>
 					<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#mtb">Travelling</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#read">Reading</a>
           </li>
         </ul>
       </div>
@@ -93,14 +90,13 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <h1 class="text-uppercase">
-						<strong>Travelling</strong>
+						<strong>Title</strong>
 					</h1>
 					<hr class="divider my-4" />
 				</div>
 				<div class="col-lg-8 mx-auto">
-					<p class="text-black font-weight-bold">A collection of Epic Mountain Biking Photos taken over the last 
-					few years in NH, MA & VT.</p>
-					<a href="#mtb" class="btn btn-primary btn-xl js-scroll-trigger">View the Photos</a>
+					<p class="text-black font-weight-bold">A collection of Things.</p>
+					<a href="#travel" class="btn btn-primary btn-xl js-scroll-trigger">View the Photos</a>
         </div>
       </div>
     </div>
@@ -112,7 +108,7 @@
 
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading" id="mtb"> Some Travel Photos</h2>
+          <h2 class="section-heading" id="travel"> Some Travel Photos</h2>
           <hr class="divider light my-4" />
         </div>
       </div>
@@ -129,19 +125,23 @@
 
          -->
         <div class="col-lg-12 text-center">
-          <div id="nanogallery2"></div>
-          
-          <!-- href's will appear here.
-               they should look something like this: 
-               
-               <a href="img/album/0315171554_Pano.jpg"
-               data-ngthumb="img/album/0315171554_Pano.jpg">Cannon Mountain 3/15/2017</a>
-          -->
-          
-        </div>
+          <div id="my_nanogallery2" data-nanogallery2 = '{
+            <!-- ### gallery settings ### -->
+              "thumbnailHeight":  150,
+              "thumbnailWidth":   150,
+              "itemsBaseURL":     "https://nanogallery2.nanostudio.org/samples/"
+            }'>
+              
+
+                      
+                  <!-- gallery content -->
+                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India </a>
+                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India</a>
+                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India </a>
+              </div>
       </div>
     </div>
-
+    
   <!--  THIS IS THE FOOTER - displays a copyright notice and
         that Bootstrap powers this web page.
         
